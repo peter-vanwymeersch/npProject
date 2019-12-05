@@ -1,0 +1,50 @@
+body {
+    height: 100%;
+    }
+
+#homepage {
+    padding-top: 2.0rem;
+    padding-bottom: 2.0rem;
+}
+
+#logo {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+#homepagetitel {
+    text-align: center;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("../img/jardin.jpeg");
+    /* If no image */
+    background-color: green;
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+a:hover {
+    color: white !important;
+    background-color: grey !important;
+    }
+    
+a:link {
+    color: white !important;    
+    }
+
+a:visited {
+    color: white !important;
+    } 
+
+a:active {
+    color: white !important;
+    }
