@@ -2,9 +2,9 @@ body {
     height: 100%;
     }
 
-#homepage {
-    padding-top: 2.0rem;
-    padding-bottom: 2.0rem;
+#mainContainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #logo {
@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-#homepagetitel {
+#pageTitel {
     text-align: center;
 }
 
@@ -48,3 +48,35 @@ a:visited {
 a:active {
     color: white !important;
     }
+
+.carousel {
+    margin-top: 20px;
+    background-color: #2f4357;
+    max-width: 750px;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item{
+    text-align: center;
+    min-height: 280px;
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h5 {
+    display: inline-block;
+    padding: 10px;
+    background: #B9121B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+   

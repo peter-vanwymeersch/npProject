@@ -1,6 +1,6 @@
 <header>
     <div class="pos-f-t">
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" id="logo" href="#">CJP</a> 
             <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>

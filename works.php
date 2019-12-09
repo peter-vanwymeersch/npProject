@@ -14,25 +14,51 @@
   </head>
   <body>
     <?php require "header.php" ?>
-    <div class="container" id="homepage">
-      <!--<section class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-          <h1 id="homepagetitel">Conception de jardin et de paysage</h1>
-          <p>Courte présentation.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in velit dignissim justo luctus vehicula id sed nunc. Suspendisse eleifend porta justo, ac efficitur elit tincidunt et. Nunc ultricies ac erat nec viverra. Curabitur rhoncus leo eleifend mollis molestie. Nullam nec vulputate orci. In vitae nibh nec ex convallis convallis. Fusce leo odio, vulputate a sapien nec, rutrum imperdiet tortor.</p>
-        </div>
-        <div class="col-lg-3"></div>
-    </section>-->
+    <div class="container" id="mainContainer">
       <section class="d-flex justify-content-center">
-        
-        <div class="p-4">
-          <h1 id="homepagetitel">Conception de jardin et de paysage</h1>
-          <p>Courte présentation.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in velit dignissim justo luctus vehicula id sed nunc. Suspendisse eleifend porta justo, ac efficitur elit tincidunt et. Nunc ultricies ac erat nec viverra. Curabitur rhoncus leo eleifend mollis molestie. Nullam nec vulputate orci. In vitae nibh nec ex convallis convallis. Fusce leo odio, vulputate a sapien nec, rutrum imperdiet tortor.</p>
+        <h1 id="pageTitel">Réalisations</h1>
+        <div id="carouselWorks" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselWorks" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselWorks" data-slide-to="1"></li>
+            <li data-target="#carouselWorks" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('public/images/path_among_flowers.jpg');">
+              <!--<img class="d-block w-100" src="public/images/path_among_flowers.jpg" alt="First slide">-->
+              <div class="carousel-caption d-none d-md-block">
+                <h3>First Slide</h3>
+                <p>First Slide description</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('public/images/path_among_flowers.jpg');">
+<img class="d-block w-100" src="public/images/path_among_flowers.jpg" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Second Slide</h3>
+                <p>Second Slide description</p>
+              </div>
+             </div>
+            <div class="carousel-item" style="background-image: url('public/images/path_among_flowers.jpg');">
+              <!--<img class="d-block w-100" src="public/images/path_among_flowers.jpg" alt="Third slide">-->
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Third Slide</h3>
+                <p>Third Slide description</p>
+              </div>
+
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselWorks" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselWorks" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        
-    </section>
-  </div>
-  <?php require "footer.php" ?>
+      </section>
+    </div>
+    <?php require "footer.php" ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

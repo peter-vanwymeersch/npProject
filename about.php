@@ -14,24 +14,27 @@
   </head>
   <body>
     <?php require "header.php" ?>
-    <div class="container" id="homepage">
-      <!--<section class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-          <h1 id="homepagetitel">Conception de jardin et de paysage</h1>
-          <p>Courte présentation.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in velit dignissim justo luctus vehicula id sed nunc. Suspendisse eleifend porta justo, ac efficitur elit tincidunt et. Nunc ultricies ac erat nec viverra. Curabitur rhoncus leo eleifend mollis molestie. Nullam nec vulputate orci. In vitae nibh nec ex convallis convallis. Fusce leo odio, vulputate a sapien nec, rutrum imperdiet tortor.</p>
-        </div>
-        <div class="col-lg-3"></div>
-    </section>-->
+    <div class="container" id="mainContainer">
+
       <section class="d-flex justify-content-center">
         
         <div class="p-4">
-          <h1 id="homepagetitel">Conception de jardin et de paysage</h1>
-          <p>Courte présentation.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in velit dignissim justo luctus vehicula id sed nunc. Suspendisse eleifend porta justo, ac efficitur elit tincidunt et. Nunc ultricies ac erat nec viverra. Curabitur rhoncus leo eleifend mollis molestie. Nullam nec vulputate orci. In vitae nibh nec ex convallis convallis. Fusce leo odio, vulputate a sapien nec, rutrum imperdiet tortor.</p>
+          <h1 id="pageTitel">A propos</h1>
+
+          <p>Longue présentation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus metus et risus suscipit, ac varius urna varius. Donec tortor justo, elementum sed porttitor ac, accumsan a dui. Fusce pulvinar vitae elit id finibus. Morbi eu lacus sed velit tristique consequat non a massa. Fusce scelerisque finibus euismod. Aenean tincidunt nibh sed lorem tempor fermentum. Nulla facilisi. Donec aliquam egestas nisi, nec elementum dui suscipit id. Etiam gravida, turpis quis vulputate imperdiet, nunc risus luctus mauris, a ultrices velit nulla sed felis. Donec dui risus, pharetra eget sollicitudin mollis, malesuada sed orci. Aenean non lectus et leo mattis tristique vel et enim.</p>
+
+          <p>Nullam sodales mollis enim et semper. Cras a sem ut arcu egestas placerat et sit amet lectus. Duis ex orci, commodo nec tellus non, varius pharetra metus. Ut nec lobortis arcu. Sed convallis placerat dictum. Suspendisse eu libero lectus. Maecenas et laoreet mauris. In volutpat eu nisi sed tempor. Suspendisse metus libero, pulvinar et sapien eu, viverra laoreet nulla. Nam vitae interdum purus, sit amet pulvinar massa. In in ultrices dolor, ut malesuada ipsum. Nam vitae placerat nibh, non lacinia nibh.</p>
+
+          <p>Vestibulum aliquet, sapien quis scelerisque maximus, urna quam molestie arcu, nec tempus est felis vel nibh. Nunc placerat lobortis finibus. Sed sit amet arcu nibh. Ut et leo sed metus rhoncus fermentum non non nisl. Vestibulum et urna est. Nullam faucibus dolor at lorem pharetra pretium. Vestibulum accumsan justo at urna viverra, at varius risus convallis. Proin interdum libero felis, vitae rhoncus nibh commodo at. Donec cursus enim non vulputate rutrum. Pellentesque non turpis eu sapien rutrum consequat.</p>
+
+          <p>Nam eget velit in elit ornare tristique. Aenean quis purus pulvinar, posuere enim a, maximus purus. Nunc luctus pellentesque risus vitae molestie. Nullam velit orci, molestie id velit vel, faucibus rutrum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor quam, feugiat at ante at, semper tincidunt tellus. Phasellus ornare quam a semper tristique. Nam porttitor faucibus lectus, id fermentum ligula porttitor vel. Morbi sit amet tellus ac ligula ornare blandit nec a dolor. Phasellus velit augue, interdum ac orci a, fringilla auctor ex. Sed blandit sem ipsum, eu hendrerit nulla congue sed. In tempor iaculis sagittis.</p>
+
+          <p>Proin finibus metus ac molestie facilisis. Donec dignissim non risus id semper. Mauris massa sapien, dignissim id commodo sed, mattis fringilla diam. Donec interdum leo nec eleifend bibendum. Etiam feugiat sed risus sed vulputate. Quisque quam tellus, sagittis eu elementum a, sollicitudin nec ligula. Integer varius varius ultricies. Pellentesque euismod viverra leo, a aliquet neque fermentum in. Vivamus vehicula, massa a sodales consectetur, lectus justo congue augue, eget dapibus urna sem at quam.</p>
+          
         </div>
         
-    </section>
-  </div>
+      <section>
+    </div>
   <?php require "footer.php" ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

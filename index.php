@@ -14,7 +14,7 @@
   </head>
   <body>
     <?php require "header.php" ?>
-    <div class="container" id="homepage">
+    <div class="container" id="mainContainer">
       <!--<section class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
@@ -26,7 +26,7 @@
       <section class="d-flex justify-content-center">
         
         <div class="p-4">
-          <h1 id="homepagetitel">Conception de jardin et de paysage</h1>
+          <h1 id="pageTitel">Conception de jardin et de paysage</h1>
           <p>Courte présentation.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in velit dignissim justo luctus vehicula id sed nunc. Suspendisse eleifend porta justo, ac efficitur elit tincidunt et. Nunc ultricies ac erat nec viverra. Curabitur rhoncus leo eleifend mollis molestie. Nullam nec vulputate orci. In vitae nibh nec ex convallis convallis. Fusce leo odio, vulputate a sapien nec, rutrum imperdiet tortor.</p>
         </div>
         
