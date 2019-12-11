@@ -10,7 +10,7 @@
                     <li class="active"><a href="index.php">Accueil</a></li>
                     <li class=""><a href="about.php">A propos</a></li>
                     <li class=""><a href="works.php">Réalisations</a></li>
-                    <li class=""><a href="members.php">Espace membres</a></li>
+                    <li class=""><a href="member_area.php">Espace membre</a></li>
                     <li class=""><a href="contact.php">Contact</a></li> 
                 </ul>
             </div>

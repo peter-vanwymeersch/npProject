@@ -1,5 +1,6 @@
 <!-- Footer -->
-<footer class="page-footer bg-dark fixed-bottom">
+<!--<footer class="page-footer bg-dark fixed-bottom">-->
+    <footer class="page-footer bg-dark">
     <!-- Footer Links -->
     <div class="container-fluid">
 

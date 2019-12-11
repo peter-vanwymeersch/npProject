@@ -1,6 +1,6 @@
 
 <?php
-   $to_email = "peter.vanwymeersch@gmail.com";
+   $to_email = "peter.vanwymeersch@gskynet.be";
    $subject = "Simple Email Test via PHP";
    $body = "Hi,nn This is test email send by PHP Script";
    $headers = "From: sender@example.com";
