@@ -1,6 +1,13 @@
 <?php
+    session_start();
 
     require 'database.php';
+
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $articles = $pdo->prepare('SELECT id, date_article, article FROM articles ORDER BY date_article DESC');
+    $articles->execute();
+    Database::disconnect();
 
     if(isset($_GET['id']) AND !empty($_GET['id'])) {
         $getid = htmlspecialchars($_GET['id']);
@@ -12,8 +19,10 @@
         $article = $article->fetch();
 
         if(isset($_POST['submit_commentaire'])) {
-            if(isset($_POST['pseudo'],$_POST['commentaire']) AND !empty($_POST['pseudo']) AND !empty($_POST['commentaire'])) {
-                $pseudo = htmlspecialchars($_POST['pseudo']);
+            //if(isset($_POST['pseudo'],$_POST['commentaire']) AND !empty($_POST['pseudo']) AND !empty($_POST['commentaire'])) {
+                //$pseudo = htmlspecialchars($_POST['pseudo']);
+            if(isset($_POST['commentaire']) AND !empty($_POST['commentaire'])) {    
+                $pseudo = $_SESSION['pseudo'];
                 $commentaire = htmlspecialchars($_POST['commentaire']);
                 if(strlen($pseudo) < 255) {
                     $pdo = Database::connect();
@@ -53,26 +62,30 @@
   <body>
 
     <?php require "header.php" ?>
-
-    <br><br><br><br><br><br>
-        <div class="container-fluid">
-            <h1 id="pageTitel">Espace Articles</h1>
+        <div class="container-fluid" id="mainContainer">
+            <h1 id="pageTitel" class="">Espace Articles et Commentaires</h1>
             <div class="d-flex justify-content-around" >
 
                 <!-- Articles list -->
-
                 <div class="col-6" style="border: 1px solid black;">
+                        <?php 
+                            foreach ($articles as $art) { ?>
+                                
+                                <?php echo '<a href="commentMbrA.php?id='.$art['id'].'" class="cjp-article"><b>'.$art['date_article'].'</b><br>'.$art['article'].'<br></a>'; ?>
+                                
+                        <?php } ?>
                 </div>
             
-                <! Comment area -->
-                <?php ob_start ?>   
+                <!-- Comment area -->
+
                 <div class="col-6" style="border: 1px solid black;">
                     <h2>Article:</h2>
                     <p><?= $article['article'] ?></p>
                     <br />
                     <h2>Commentaires:</h2>
                     <form method="POST">
-                        <input type="text" name="pseudo" placeholder="Votre pseudo" /><br />
+                        <!--<input type="text" name="pseudo" placeholder="Votre pseudo" /><br />-->
+                        <input type="text" name="pseudo" placeholder=<?= $_SESSION['pseudo'] ?> disabled/><br />
                         <textarea name="commentaire" placeholder="Votre commentaire..."></textarea><br />
                         <input type="submit" value="Poster mon commentaire" name="submit_commentaire" />
                     </form>
@@ -83,9 +96,10 @@
                     <?php } ?>
                     <?php } ?>
                 </div>
-                <?php ob_end_clean ?>
+
             </div>
         </div>
+    
 
     <?php require "footer.php" ?>
     

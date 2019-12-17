@@ -72,14 +72,29 @@ if(isset($_POST['submit_connexion'])) {
             $userinfo = $requser->fetch();
             $_SESSION['id'] = $userinfo['id'];
             $_SESSION['pseudo'] = $userinfo['pseudo'];
+            $_SESSION['member_status'] = $userinfo['member_status'];
             $_SESSION['mail'] = $userinfo['mail'];
-            //header("Location: profile.php?id=".$_SESSION['id']);
+            if ($userinfo['member_status'] == 2) {
+                header("Location: commentMbrA.php?id=1");
+            } else {
+                header("Location: commentMbr.php?id=1");
+            }
         } else {
             $err_connect = "Mauvais mail ou mot de passe !";
         }
     } else {
         $err_connect = "Tous les champs doivent être complétés !";
     }
+ }
+
+// Deconnexion
+if(isset($_POST['deconnexion'])) {
+//print_r ($_SESSION);
+unset($_SESSION['id']);
+unset($_SESSION['pseudo']);
+unset($_SESSION['member_status']);
+unset($_SESSION['mail']);
+// print_r ($_SESSION);
  }
 ?>
 <!doctype html>
@@ -97,9 +112,9 @@ if(isset($_POST['submit_connexion'])) {
         <title>npProject - Espace membre</title>
     </head>
     <body>
-        <!--<?php require "header.php" ?>-->
-        <br><br><br><br><br><br>
-        <div class="container-fluid">
+        <?php require "header.php" ?>
+        
+        <div class="container-fluid" id="mainContainer">
             <h1 id="pageTitel">Espace membres</h1>
             <div class="d-flex justify-content-around" >
 
@@ -176,7 +191,7 @@ if(isset($_POST['submit_connexion'])) {
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary" name="submit_registration">Je m'inscris</button>
-                            <button type="reset" class="btn btn-secondary">J'efface</button> 
+                            <button type="reset" class="btn btn-secondary">J'efface</button>
                         </fieldset>
                         <br>
                         <?php if(isset($err_registration)) { echo $err_registration; } ?>
@@ -212,11 +227,12 @@ if(isset($_POST['submit_connexion'])) {
 
                            
                             <button type="submit" class="btn btn-primary" name="submit_connexion">Je me connecte</button>
-                            <button type="reset" class="btn btn-secondary">J'efface</button> 
+                            <button type="reset" class="btn btn-secondary">J'efface</button>
+                            <button type="submit" class="btn btn-info" name="deconnexion">Je me déconnecte</button>
                         </fieldset>
                         <br>
-                        <?php if(isset($err_connect)) { echo $err_connect; } 
-                            var_dump($_SESSION);?>
+                        <?php //if(isset($err_connect)) { echo $err_connect; } 
+                            //var_dump($_SESSION);?>
                         
                     </form>
                 </div>

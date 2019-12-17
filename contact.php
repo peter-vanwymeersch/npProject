@@ -14,7 +14,30 @@
   </head>
   <body>
     <?php require "header.php" ?>
-    <div class="container" id="homepage">
+    <div class="container" id="mainContainer">
+      <h1 id="pageTitel" class="">Contact</h1>
+      <div class="col-12 col-md-6 my-2">
+                    <div class="resto-map">
+                        <iframe width="500" height="342"
+                            src="https://maps.google.com/maps?width=500&amp;height=342&amp;hl=en&amp;q=bruxelles%20place%20jourdan+(Place%20Jourdan)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        <div class="resto-map1">
+                            <small class="resto-style">Powered by <a
+                                    href="https://embedgooglemaps.com/en/">embedgooglemaps FR</a> & <a
+                                    href="https://lasagradafamiliatickets.de/la-sagrada-familia-ticket/">tickets online
+                                    buchen</a>
+                            </small>
+                        </div>
+                        <style id="gmap_canvas">
+                            #gmap_canvas img {
+                                max-width: none !important;
+                                background: none !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+
       <!--<section class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-6">

@@ -2,6 +2,10 @@ body {
     height: 100%;
     }
 
+article {
+    color: black;
+}
+
 #mainContainer {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -32,42 +36,22 @@ body {
     background-size: cover;
     }
 
-a:hover {
+.cjp-footer:hover {
     color: white !important;
     background-color: grey !important;
     }
     
-a:link {
+.cjp-footer:link {
     color: white !important;    
     }
 
-a:visited {
+.cjp-footer:visited {
     color: white !important;
     } 
 
-a:active {
+.cjp-footer:active {
     color: white !important;
     }
-
-.cjp-article:hover {
-    color: black !important;
-    background-color: grey !important;
-}
-
-.cjp-article:link {
-    color: black !important;
-    background-color: white !important;    
-}
-
-.cjp-article:visited {
-    color: black !important;
-    background-color: white !important;       
-}
-
-.cjp-article:active {
-    color: black !important;
-    background-color: white !important;       
-}
 
 .carousel {
     margin-top: 20px;
