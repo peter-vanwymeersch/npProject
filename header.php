@@ -11,7 +11,7 @@
                     <li class=""><a href="about.php">A propos</a></li>
                     <li class=""><a href="works.php">Réalisations</a></li>
                     <li class=""><a href="member_area.php">Espace membre</a></li>
-                    <li class=""><a href="contact.php">Contact</a></li> 
+                    <li class=""><a href="contact.php?adr=adr1">Contact</a></li> 
                 </ul>
             </div>
         </nav>
